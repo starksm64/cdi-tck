@@ -21,3 +21,6 @@ jobs:
       - name: "Maven install"
         run: |
           mvn clean install -B -V
+      - name: "Maven install(staging)"
+        run: |
+          mvn clean install -Pstaging -B -V
